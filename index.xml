@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JSON BinPack</title>
+    <link>https://www.jsonbinpack.org/</link>
+    <description>Recent content on JSON BinPack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved. 2022</copyright>
+    
+	<atom:link href="https://www.jsonbinpack.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JSON Stats Tool</title>
+      <link>https://www.jsonbinpack.org/stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.jsonbinpack.org/stats/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
