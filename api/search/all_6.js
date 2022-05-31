@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['maxcontainswithoutcontains_11',['MaxContainsWithoutContains',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_max_contains_without_contains.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
-  ['mincontainswithoutcontains_12',['MinContainsWithoutContains',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_min_contains_without_contains.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
-  ['minpropertiesrequiredtautology_13',['MinPropertiesRequiredTautology',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_min_properties_required_tautology.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]]
+  ['maxcontainswithoutcontains_12',['MaxContainsWithoutContains',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_max_contains_without_contains.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
+  ['mincontainswithoutcontains_13',['MinContainsWithoutContains',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_min_contains_without_contains.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
+  ['minpropertiesrequiredtautology_14',['MinPropertiesRequiredTautology',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_min_properties_required_tautology.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]]
 ];
