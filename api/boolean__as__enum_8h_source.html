@@ -90,8 +90,8 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> sourcemeta::jsontoolkit::schema::has_vocabulary&lt;std::string&gt;(</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;               schema,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;               <span class="stringliteral">&quot;https://json-schema.org/draft/2020-12/vocab/validation&quot;</span>) &amp;&amp;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;           schema.is_object() &amp;&amp; schema.contains(<span class="stringliteral">&quot;type&quot;</span>) &amp;&amp;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;           schema.at(<span class="stringliteral">&quot;type&quot;</span>) == <span class="stringliteral">&quot;boolean&quot;</span> &amp;&amp; !schema.contains(<span class="stringliteral">&quot;enum&quot;</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;           schema.is_object() &amp;&amp; schema.defines(<span class="stringliteral">&quot;type&quot;</span>) &amp;&amp;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;           schema.at(<span class="stringliteral">&quot;type&quot;</span>) == <span class="stringliteral">&quot;boolean&quot;</span> &amp;&amp; !schema.defines(<span class="stringliteral">&quot;enum&quot;</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">auto</span> transform(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;schema) <span class="keyword">const</span></div>

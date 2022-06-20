@@ -85,7 +85,7 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="comment">// We don&#39;t want to play the game of attempting to guess</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="comment">// what version of the specification and vocabularies</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="comment">// are being loaded by a given schema.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">if</span> (document.is_object() &amp;&amp; document.contains(<span class="stringliteral">&quot;$schema&quot;</span>) &amp;&amp;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordflow">if</span> (document.is_object() &amp;&amp; document.defines(<span class="stringliteral">&quot;$schema&quot;</span>) &amp;&amp;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      document.at(<span class="stringliteral">&quot;$schema&quot;</span>).is_string()) {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  }</div>
