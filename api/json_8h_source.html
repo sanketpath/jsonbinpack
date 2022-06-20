@@ -456,7 +456,7 @@ $(function() {
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;Data type is not a container&quot;</span>);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  }</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keyword">auto</span> contains(<span class="keyword">const</span> Source &amp;value) -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="keyword">auto</span> contains(<span class="keyword">const</span> <a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;</a> &amp;value) -&gt; <span class="keywordtype">bool</span> {</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    this-&gt;shallow_parse();</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keyword">auto</span> &amp;document =</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        std::get&lt;sourcemeta::jsontoolkit::Array&lt;JSON&lt;Source&gt;, Source&gt;&gt;(</div>
@@ -469,7 +469,7 @@ $(function() {
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    });</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  }</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> contains(<span class="keyword">const</span> Source &amp;value) <span class="keyword">const</span> -&gt; <span class="keywordtype">bool</span> {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  [[nodiscard]] <span class="keyword">auto</span> contains(<span class="keyword">const</span> <a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;</a> &amp;value) <span class="keyword">const</span> -&gt; <span class="keywordtype">bool</span> {</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    this-&gt;must_be_fully_parsed();</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;document =</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        std::get&lt;sourcemeta::jsontoolkit::Array&lt;JSON&lt;Source&gt;, Source&gt;&gt;(</div>
