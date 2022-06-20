@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['thenelsewithoutif_55',['ThenElseWithoutIf',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_then_else_without_if.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
-  ['typeunionanyof_56',['TypeUnionAnyOf',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_type_union_any_of.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]]
+  ['string_66',['String',['../classsourcemeta_1_1jsontoolkit_1_1_string.html',1,'sourcemeta::jsontoolkit']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rule_52',['Rule',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_rule.html',1,'sourcemeta::jsonbinpack::canonicalizer']]]
+  ['object_64',['Object',['../classsourcemeta_1_1jsontoolkit_1_1_object.html',1,'sourcemeta::jsontoolkit']]]
 ];
