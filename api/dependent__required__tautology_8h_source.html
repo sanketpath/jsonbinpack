@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;           std::any_of(</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;               schema.at(keywords::validation::required).to_array().cbegin(),</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;               schema.at(keywords::validation::required).to_array().cend(),</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;               [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;element) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;               [&amp;schema](<span class="keyword">const</span> <span class="keyword">auto</span> &amp;element) {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                 return element.is_string() &amp;&amp;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                        schema.at(keywords::validation::dependentRequired)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                            .defines(element.to_string()) &amp;&amp;</div>
