@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['thenelsewithoutif_83',['ThenElseWithoutIf',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_then_else_without_if.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
-  ['typeunionanyof_84',['TypeUnionAnyOf',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_type_union_any_of.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]]
+  ['thenelsewithoutif_85',['ThenElseWithoutIf',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_then_else_without_if.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]],
+  ['typeunionanyof_86',['TypeUnionAnyOf',['../classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_type_union_any_of.html',1,'sourcemeta::jsonbinpack::canonicalizer::rules']]]
 ];
