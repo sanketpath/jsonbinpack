@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['object_82',['Object',['../classsourcemeta_1_1jsontoolkit_1_1_object.html',1,'sourcemeta::jsontoolkit']]]
+  ['object_84',['Object',['../classsourcemeta_1_1jsontoolkit_1_1_object.html',1,'sourcemeta::jsontoolkit']]]
 ];
