@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON BinPack: /home/runner/work/jsonbinpack/jsonbinpack/src/canonicalizer/include/jsonbinpack/canonicalizer/bundle.h Source File</title>
+<title>JSON BinPack: /home/runner/work/jsonbinpack/jsonbinpack/src/alterschema/include/alterschema/bundle.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c5e84492fef98dcfce9f47d275c4ca2f.html">canonicalizer</a></li><li class="navelem"><a class="el" href="dir_43f6cea4561e7546043486c469fe24e6.html">include</a></li><li class="navelem"><a class="el" href="dir_1539ec0602791a66a6b16cd8dd0938d3.html">jsonbinpack</a></li><li class="navelem"><a class="el" href="dir_9240e5e2075e75064f4e0a7122e3547a.html">canonicalizer</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9938e378adc4c6c9d5cf3e2da5be778f.html">alterschema</a></li><li class="navelem"><a class="el" href="dir_05c0ff6bbbc6c5c4484550d6aa7123d8.html">include</a></li><li class="navelem"><a class="el" href="dir_f730a7066d7e968945216cdf1433144e.html">alterschema</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,32 +72,30 @@ $(function() {
 <div class="title">bundle.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SOURCEMETA_JSONBINPACK_CANONICALIZER_BUNDLE_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SOURCEMETA_JSONBINPACK_CANONICALIZER_BUNDLE_H_</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SOURCEMETA_ALTERSCHEMA_BUNDLE_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SOURCEMETA_ALTERSCHEMA_BUNDLE_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;jsonbinpack/canonicalizer/rule.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alterschema/rule.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;jsontoolkit/json.h&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// std::unique_ptr</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span> <span class="comment">// std::vector</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>sourcemeta::jsonbinpack::canonicalizer {</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_bundle.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_bundle.html">Bundle</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>sourcemeta::alterschema {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classsourcemeta_1_1alterschema_1_1_bundle.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsourcemeta_1_1alterschema_1_1_bundle.html">Bundle</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_bundle.html">Bundle</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">auto</span> add(std::unique_ptr&lt;sourcemeta::jsonbinpack::canonicalizer::Rule&gt; &amp;&amp;rule)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      -&gt; void;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">auto</span> apply(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;document)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      -&gt; <a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  std::vector&lt;std::unique_ptr&lt;sourcemeta::jsonbinpack::canonicalizer::Rule&gt;&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      rules;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace sourcemeta::jsonbinpack::canonicalizer</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classsourcemeta_1_1alterschema_1_1_bundle.html">Bundle</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">auto</span> add(std::unique_ptr&lt;sourcemeta::alterschema::Rule&gt; &amp;&amp;rule) -&gt; void;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="comment">// TODO: Take proper JSON templates</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">auto</span> apply(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;document) -&gt; void;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  std::vector&lt;std::unique_ptr&lt;sourcemeta::alterschema::Rule&gt;&gt; rules;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <span class="comment">// namespace sourcemeta::alterschema</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasssourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_bundle_html"><div class="ttname"><a href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_bundle.html">sourcemeta::jsonbinpack::canonicalizer::Bundle</a></div><div class="ttdef"><b>Definition:</b> bundle.h:10</div></div>
+<div class="ttc" id="aclasssourcemeta_1_1alterschema_1_1_bundle_html"><div class="ttname"><a href="classsourcemeta_1_1alterschema_1_1_bundle.html">sourcemeta::alterschema::Bundle</a></div><div class="ttdef"><b>Definition:</b> bundle.h:10</div></div>
 <div class="ttc" id="aclasssourcemeta_1_1jsontoolkit_1_1_j_s_o_n_html"><div class="ttname"><a href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON</a></div><div class="ttdef"><b>Definition:</b> json.h:30</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

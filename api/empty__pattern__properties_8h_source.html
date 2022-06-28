@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON BinPack: /home/runner/work/jsonbinpack/jsonbinpack/src/canonicalizer/src/rules/empty_pattern_properties.h Source File</title>
+<title>JSON BinPack: /home/runner/work/jsonbinpack/jsonbinpack/src/canonicalizer/include/jsonbinpack/canonicalizer/rules/empty_pattern_properties.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c5e84492fef98dcfce9f47d275c4ca2f.html">canonicalizer</a></li><li class="navelem"><a class="el" href="dir_9a0de08f89e63b80f081d30c34fdb733.html">src</a></li><li class="navelem"><a class="el" href="dir_9c1cc3280cead6bd275bb1cfdb8721b2.html">rules</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c5e84492fef98dcfce9f47d275c4ca2f.html">canonicalizer</a></li><li class="navelem"><a class="el" href="dir_43f6cea4561e7546043486c469fe24e6.html">include</a></li><li class="navelem"><a class="el" href="dir_1539ec0602791a66a6b16cd8dd0938d3.html">jsonbinpack</a></li><li class="navelem"><a class="el" href="dir_9240e5e2075e75064f4e0a7122e3547a.html">canonicalizer</a></li><li class="navelem"><a class="el" href="dir_63ee95bd427cd0d88d1ff6d4f377b488.html">rules</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,39 +72,38 @@ $(function() {
 <div class="title">empty_pattern_properties.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;jsonbinpack/canonicalizer/rule.h&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;alterschema/rule.h&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;jsontoolkit/json.h&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;jsontoolkit/schema.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>sourcemeta::jsonbinpack::canonicalizer::rules {</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">EmptyPatternProperties</a> final</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_rule.html">sourcemeta::jsonbinpack::canonicalizer::Rule</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">EmptyPatternProperties</a>() : <a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_rule.html">Rule</a>(<span class="stringliteral">&quot;empty_pattern_properties&quot;</span>){};</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  [[nodiscard]] <span class="keyword">auto</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  condition(<span class="keyword">const</span> <a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;schema) <span class="keyword">const</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      -&gt; <span class="keywordtype">bool</span> <span class="keyword">override</span> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">using namespace </span>sourcemeta::jsontoolkit::schema::draft2020_12;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span> sourcemeta::jsontoolkit::schema::has_vocabulary&lt;std::string&gt;(</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;               schema, vocabularies::applicator) &amp;&amp;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;           schema.is_object() &amp;&amp;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;           schema.defines(keywords::applicator::patternProperties) &amp;&amp;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;           schema.at(keywords::applicator::patternProperties).empty();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">auto</span> transform(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;schema) <span class="keyword">const</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      -&gt; <span class="keywordtype">void</span> <span class="keyword">override</span> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">using namespace </span>sourcemeta::jsontoolkit::schema::draft2020_12;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    schema.erase(keywords::applicator::patternProperties);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace sourcemeta::jsonbinpack::canonicalizer::rules</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">EmptyPatternProperties</a> final : <span class="keyword">public</span> <a class="code" href="classsourcemeta_1_1alterschema_1_1_rule.html">sourcemeta::alterschema::Rule</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">EmptyPatternProperties</a>() : Rule(<span class="stringliteral">&quot;empty_pattern_properties&quot;</span>){};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  [[nodiscard]] <span class="keyword">auto</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  condition(<span class="keyword">const</span> <a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;schema) <span class="keyword">const</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      -&gt; <span class="keywordtype">bool</span> <span class="keyword">override</span> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">using namespace </span>sourcemeta::jsontoolkit::schema::draft2020_12;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> sourcemeta::jsontoolkit::schema::has_vocabulary&lt;std::string&gt;(</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;               schema, vocabularies::applicator) &amp;&amp;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;           schema.is_object() &amp;&amp;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;           schema.defines(keywords::applicator::patternProperties) &amp;&amp;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;           schema.at(keywords::applicator::patternProperties).empty();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">auto</span> transform(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON&lt;std::string&gt;</a> &amp;schema) <span class="keyword">const</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      -&gt; <span class="keywordtype">void</span> <span class="keyword">override</span> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">using namespace </span>sourcemeta::jsontoolkit::schema::draft2020_12;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    schema.erase(keywords::applicator::patternProperties);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace sourcemeta::jsonbinpack::canonicalizer::rules</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclasssourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties_html"><div class="ttname"><a href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html">sourcemeta::jsonbinpack::canonicalizer::rules::EmptyPatternProperties</a></div><div class="ttdef"><b>Definition:</b> empty_pattern_properties.h:7</div></div>
-<div class="ttc" id="aclasssourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_rule_html"><div class="ttname"><a href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1_rule.html">sourcemeta::jsonbinpack::canonicalizer::Rule</a></div><div class="ttdef"><b>Definition:</b> rule.h:8</div></div>
 <div class="ttc" id="aclasssourcemeta_1_1jsontoolkit_1_1_j_s_o_n_html"><div class="ttname"><a href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON</a></div><div class="ttdef"><b>Definition:</b> json.h:30</div></div>
+<div class="ttc" id="aclasssourcemeta_1_1alterschema_1_1_rule_html"><div class="ttname"><a href="classsourcemeta_1_1alterschema_1_1_rule.html">sourcemeta::alterschema::Rule</a></div><div class="ttdef"><b>Definition:</b> rule.h:8</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
