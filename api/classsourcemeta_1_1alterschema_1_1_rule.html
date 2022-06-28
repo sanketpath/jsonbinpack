@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>JSON BinPack: sourcemeta::alterschema::Rule Class Reference</title>
+<title>JSON BinPack: sourcemeta::alterschema::Rule&lt; Source &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,82 +72,36 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classsourcemeta_1_1alterschema_1_1_rule-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sourcemeta::alterschema::Rule Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">sourcemeta::alterschema::Rule&lt; Source &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for sourcemeta::alterschema::Rule:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classsourcemeta_1_1alterschema_1_1_rule.png" usemap="#sourcemeta::alterschema::Rule_map" alt=""/>
-  <map id="sourcemeta::alterschema::Rule_map" name="sourcemeta::alterschema::Rule_map">
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_boolean_as_enum.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::BooleanAsEnum" shape="rect" coords="517,56,1024,80"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_boolean_schema.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::BooleanSchema" shape="rect" coords="517,112,1024,136"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_const_as_enum.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ConstAsEnum" shape="rect" coords="517,168,1024,192"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_content_schema_without_content_media_type.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ContentSchemaWithoutContentMediaType" shape="rect" coords="517,224,1024,248"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_dependent_required_tautology.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DependentRequiredTautology" shape="rect" coords="517,280,1024,304"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_drop_non_array_keywords.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DropNonArrayKeywords" shape="rect" coords="517,336,1024,360"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_drop_non_boolean_keywords.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DropNonBooleanKeywords" shape="rect" coords="517,392,1024,416"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_drop_non_null_keywords.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DropNonNullKeywords" shape="rect" coords="517,448,1024,472"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_drop_non_numeric_keywords.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DropNonNumericKeywords" shape="rect" coords="517,504,1024,528"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_drop_non_object_keywords.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DropNonObjectKeywords" shape="rect" coords="517,560,1024,584"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_drop_non_string_keywords.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DropNonStringKeywords" shape="rect" coords="517,616,1024,640"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_duplicate_all_of_branches.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DuplicateAllOfBranches" shape="rect" coords="517,672,1024,696"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_duplicate_any_of_branches.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::DuplicateAnyOfBranches" shape="rect" coords="517,728,1024,752"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_array_as_const.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::EmptyArrayAsConst" shape="rect" coords="517,784,1024,808"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_dependent_required.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::EmptyDependentRequired" shape="rect" coords="517,840,1024,864"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_object_as_const.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::EmptyObjectAsConst" shape="rect" coords="517,896,1024,920"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_pattern_properties.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::EmptyPatternProperties" shape="rect" coords="517,952,1024,976"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_empty_string_as_const.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::EmptyStringAsConst" shape="rect" coords="517,1008,1024,1032"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_equal_numeric_bounds_as_const.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::EqualNumericBoundsAsConst" shape="rect" coords="517,1064,1024,1088"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_exclusive_maximum_to_maximum.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ExclusiveMaximumToMaximum" shape="rect" coords="517,1120,1024,1144"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_exclusive_minimum_to_minimum.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ExclusiveMinimumToMinimum" shape="rect" coords="517,1176,1024,1200"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_if_without_then_else.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::IfWithoutThenElse" shape="rect" coords="517,1232,1024,1256"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_array_lower_bound.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitArrayLowerBound" shape="rect" coords="517,1288,1024,1312"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_object_lower_bound.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitObjectLowerBound" shape="rect" coords="517,1344,1024,1368"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_object_properties.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitObjectProperties" shape="rect" coords="517,1400,1024,1424"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_object_required.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitObjectRequired" shape="rect" coords="517,1456,1024,1480"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_string_lower_bound.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitStringLowerBound" shape="rect" coords="517,1512,1024,1536"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_type_union.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitTypeUnion" shape="rect" coords="517,1568,1024,1592"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implicit_unit_multiple_of.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImplicitUnitMultipleOf" shape="rect" coords="517,1624,1024,1648"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_implied_array_unique_items.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ImpliedArrayUniqueItems" shape="rect" coords="517,1680,1024,1704"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_max_contains_without_contains.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::MaxContainsWithoutContains" shape="rect" coords="517,1736,1024,1760"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_min_contains_without_contains.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::MinContainsWithoutContains" shape="rect" coords="517,1792,1024,1816"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_min_properties_required_tautology.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::MinPropertiesRequiredTautology" shape="rect" coords="517,1848,1024,1872"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_null_as_const.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::NullAsConst" shape="rect" coords="517,1904,1024,1928"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_then_else_without_if.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::ThenElseWithoutIf" shape="rect" coords="517,1960,1024,1984"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_type_union_any_of.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::TypeUnionAnyOf" shape="rect" coords="517,2016,1024,2040"/>
-<area href="classsourcemeta_1_1jsonbinpack_1_1canonicalizer_1_1rules_1_1_unsatisfiable_max_contains.html" alt="sourcemeta::jsonbinpack::canonicalizer::rules::UnsatisfiableMaxContains" shape="rect" coords="517,2072,1024,2096"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5d863b3e14f1fe42672865609ae444c"><td class="memItemLeft" align="right" valign="top"><a id="af5d863b3e14f1fe42672865609ae444c"></a>
+<tr class="memitem:ad9e2df42e2e736a84e48c2f089d1a40d"><td class="memItemLeft" align="right" valign="top"><a id="ad9e2df42e2e736a84e48c2f089d1a40d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Rule</b> (std::string name)</td></tr>
-<tr class="separator:af5d863b3e14f1fe42672865609ae444c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3e6be389ed3f46df8b756bc801fc02c"><td class="memItemLeft" align="right" valign="top"><a id="af3e6be389ed3f46df8b756bc801fc02c"></a>
+<tr class="separator:ad9e2df42e2e736a84e48c2f089d1a40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac93ae59a32243afd9d41d61ffb16e4"><td class="memItemLeft" align="right" valign="top"><a id="abac93ae59a32243afd9d41d61ffb16e4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Rule</b> (const <a class="el" href="classsourcemeta_1_1alterschema_1_1_rule.html">Rule</a> &amp;)=delete</td></tr>
-<tr class="separator:af3e6be389ed3f46df8b756bc801fc02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae829f747c787c69fa81a1a6b20480c1"><td class="memItemLeft" align="right" valign="top"><a id="aae829f747c787c69fa81a1a6b20480c1"></a>
+<tr class="separator:abac93ae59a32243afd9d41d61ffb16e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38b8f1673f00c250eb1286f49a94790"><td class="memItemLeft" align="right" valign="top"><a id="aa38b8f1673f00c250eb1286f49a94790"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Rule</b> (<a class="el" href="classsourcemeta_1_1alterschema_1_1_rule.html">Rule</a> &amp;&amp;)=delete</td></tr>
-<tr class="separator:aae829f747c787c69fa81a1a6b20480c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4321daa324bdeaaa4ba43320dee652a"><td class="memItemLeft" align="right" valign="top"><a id="aa4321daa324bdeaaa4ba43320dee652a"></a>
+<tr class="separator:aa38b8f1673f00c250eb1286f49a94790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2929a7f3c0ce518dc15a2a61a52704b"><td class="memItemLeft" align="right" valign="top"><a id="ad2929a7f3c0ce518dc15a2a61a52704b"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classsourcemeta_1_1alterschema_1_1_rule.html">Rule</a> &amp;) -&gt; <a class="el" href="classsourcemeta_1_1alterschema_1_1_rule.html">Rule</a> &amp;=delete</td></tr>
-<tr class="separator:aa4321daa324bdeaaa4ba43320dee652a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc652ce0fa4d5e1ef43059c8572caf0"><td class="memItemLeft" align="right" valign="top"><a id="aacc652ce0fa4d5e1ef43059c8572caf0"></a>
+<tr class="separator:ad2929a7f3c0ce518dc15a2a61a52704b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2b667eacfe50498e632db243f0f44a"><td class="memItemLeft" align="right" valign="top"><a id="a0d2b667eacfe50498e632db243f0f44a"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classsourcemeta_1_1alterschema_1_1_rule.html">Rule</a> &amp;&amp;) -&gt; <a class="el" href="classsourcemeta_1_1alterschema_1_1_rule.html">Rule</a> &amp;=delete</td></tr>
-<tr class="separator:aacc652ce0fa4d5e1ef43059c8572caf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26bc0450e454706d84bcb89f52291a72"><td class="memItemLeft" align="right" valign="top"><a id="a26bc0450e454706d84bcb89f52291a72"></a>
+<tr class="separator:a0d2b667eacfe50498e632db243f0f44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49dae5d1438b0c77e4331860c711e01b"><td class="memItemLeft" align="right" valign="top"><a id="a49dae5d1438b0c77e4331860c711e01b"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const -&gt; const std::string &amp;</td></tr>
-<tr class="separator:a26bc0450e454706d84bcb89f52291a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39010e9a7490188fac4a5ade6ea95fe6"><td class="memItemLeft" align="right" valign="top"><a id="a39010e9a7490188fac4a5ade6ea95fe6"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (<a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON</a>&lt; std::string &gt; &amp;value) const -&gt; bool</td></tr>
-<tr class="separator:a39010e9a7490188fac4a5ade6ea95fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a49dae5d1438b0c77e4331860c711e01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7116836cefd9ed71ad3333c924f929"><td class="memItemLeft" align="right" valign="top"><a id="a4c7116836cefd9ed71ad3333c924f929"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (<a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">sourcemeta::jsontoolkit::JSON</a>&lt; Source &gt; &amp;value) const -&gt; bool</td></tr>
+<tr class="separator:a4c7116836cefd9ed71ad3333c924f929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/jsonbinpack/jsonbinpack/src/alterschema/include/alterschema/<a class="el" href="rule_8h_source.html">rule.h</a></li>
-<li>/home/runner/work/jsonbinpack/jsonbinpack/src/alterschema/src/rule.cc</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
