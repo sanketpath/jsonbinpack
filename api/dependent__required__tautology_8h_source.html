@@ -123,11 +123,11 @@ $(function() {
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> &amp;dependent_requires =</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keyword">auto</span> &amp;dependent_requires =</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          schema.at(keywords::validation::dependentRequired)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;              .at(element.to_string())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              .to_array();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      std::copy(dependent_requires.cbegin(), dependent_requires.cend(),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      std::copy(dependent_requires.begin(), dependent_requires.end(),</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                std::back_inserter(new_requires));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      schema.at(keywords::validation::dependentRequired)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          .erase(element.to_string());</div>
