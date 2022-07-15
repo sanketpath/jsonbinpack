@@ -163,6 +163,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> () const -&g
 <tr class="memitem:a0555e9d953ab4f703018446288fd1f91"><td class="memItemLeft" align="right" valign="top"><a id="a0555e9d953ab4f703018446288fd1f91"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_object.html">Object</a>&lt; Wrapper, Source &gt; &amp;value) const -&gt; bool</td></tr>
 <tr class="separator:a0555e9d953ab4f703018446288fd1f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e7a4f7da1f059f599d73432b3114e4"><td class="memItemLeft" align="right" valign="top"><a id="a10e7a4f7da1f059f599d73432b3114e4"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_object.html">Object</a>&lt; Wrapper, Source &gt; &amp;other) const -&gt; bool</td></tr>
+<tr class="separator:a10e7a4f7da1f059f599d73432b3114e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -187,12 +190,12 @@ static const char&#160;</td><td class="memItemRight" valign="bottom"><b>token_de
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab13c6708f19ab4b0dc999b3591f19947"><td class="memItemLeft" align="right" valign="top"><a id="ab13c6708f19ab4b0dc999b3591f19947"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::size_t indent) -&gt; std::string</td></tr>
-<tr class="separator:ab13c6708f19ab4b0dc999b3591f19947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2940ba1fa6db2467e7882ee33e58a5f8"><td class="memItemLeft" align="right" valign="top"><a id="a2940ba1fa6db2467e7882ee33e58a5f8"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::size_t indent) const -&gt; std::string</td></tr>
-<tr class="separator:a2940ba1fa6db2467e7882ee33e58a5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20cd1f6bf38d7aa0612ac7227ce0615"><td class="memItemLeft" align="right" valign="top"><a id="ae20cd1f6bf38d7aa0612ac7227ce0615"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t level) -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:ae20cd1f6bf38d7aa0612ac7227ce0615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa389fc9532c58f2ce28498616bcbfce3"><td class="memItemLeft" align="right" valign="top"><a id="aa389fc9532c58f2ce28498616bcbfce3"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t level) const -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:aa389fc9532c58f2ce28498616bcbfce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/jsonbinpack/jsonbinpack/src/jsontoolkit/include/jsontoolkit/<a class="el" href="json__array_8h_source.html">json_array.h</a></li>

@@ -181,6 +181,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const -&
 <tr class="memitem:ac1348dba6b1df5aef38763b2719f7fd2"><td class="memItemLeft" align="right" valign="top"><a id="ac1348dba6b1df5aef38763b2719f7fd2"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_array.html">Array</a>&lt; Wrapper, Source &gt; &amp;value) const -&gt; bool</td></tr>
 <tr class="separator:ac1348dba6b1df5aef38763b2719f7fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162757624a802329373cdba0aa3641ee"><td class="memItemLeft" align="right" valign="top"><a id="a162757624a802329373cdba0aa3641ee"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_array.html">Array</a>&lt; Wrapper, Source &gt; &amp;other) const -&gt; bool</td></tr>
+<tr class="separator:a162757624a802329373cdba0aa3641ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -202,12 +205,12 @@ static const char&#160;</td><td class="memItemRight" valign="bottom"><b>token_de
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af69cf78f1e77c3419c5978b2e35a9f08"><td class="memItemLeft" align="right" valign="top"><a id="af69cf78f1e77c3419c5978b2e35a9f08"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::size_t indent) -&gt; std::string</td></tr>
-<tr class="separator:af69cf78f1e77c3419c5978b2e35a9f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f1534c070b612f8551a53b38d5325b0"><td class="memItemLeft" align="right" valign="top"><a id="a6f1534c070b612f8551a53b38d5325b0"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::size_t indent) const -&gt; std::string</td></tr>
-<tr class="separator:a6f1534c070b612f8551a53b38d5325b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61779beaf356d288f8bded833adba09c"><td class="memItemLeft" align="right" valign="top"><a id="a61779beaf356d288f8bded833adba09c"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t level) -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:a61779beaf356d288f8bded833adba09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2886d26d51964428be73cc7ae87c7168"><td class="memItemLeft" align="right" valign="top"><a id="a2886d26d51964428be73cc7ae87c7168"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t level) const -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:a2886d26d51964428be73cc7ae87c7168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_container.html">sourcemeta::jsontoolkit::Container&lt; Source &gt;</a></td></tr>
 <tr class="memitem:a4c4c241565d659993d008eae34b5aa96 inherit pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td class="memItemLeft" align="right" valign="top"><a id="a4c4c241565d659993d008eae34b5aa96"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> () const -&gt; const Source &amp;</td></tr>

@@ -70,6 +70,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -115,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85ae14e9585dc58bb9bc424901fea91f"><td class="memItemLeft" align="right" valign="top"><a id="a85ae14e9585dc58bb9bc424901fea91f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>JSON</b> (std::int64_t value)</td></tr>
 <tr class="separator:a85ae14e9585dc58bb9bc424901fea91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040b35235153f0b96e49c27ebe163ec7"><td class="memItemLeft" align="right" valign="top"><a id="a040b35235153f0b96e49c27ebe163ec7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JSON</b> (int value)</td></tr>
+<tr class="separator:a040b35235153f0b96e49c27ebe163ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308a60384a85c9b02e622404a5321879"><td class="memItemLeft" align="right" valign="top"><a id="a308a60384a85c9b02e622404a5321879"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>JSON</b> (double value)</td></tr>
 <tr class="separator:a308a60384a85c9b02e622404a5321879"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,15 +188,12 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (std::
 <tr class="memitem:a6bf7c454d7a09b5031ec6100643e6a53"><td class="memItemLeft" align="right" valign="top"><a id="a6bf7c454d7a09b5031ec6100643e6a53"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (int value) const -&gt; bool</td></tr>
 <tr class="separator:a6bf7c454d7a09b5031ec6100643e6a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a254ca3925a84aab2bfb83278cfe3ad"><td class="memItemLeft" align="right" valign="top"><a id="a5a254ca3925a84aab2bfb83278cfe3ad"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (long value) const -&gt; bool</td></tr>
+<tr class="separator:a5a254ca3925a84aab2bfb83278cfe3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95fc32c72847b865d2fd9f65d98a61c8"><td class="memItemLeft" align="right" valign="top"><a id="a95fc32c72847b865d2fd9f65d98a61c8"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (double value) const -&gt; bool</td></tr>
 <tr class="separator:a95fc32c72847b865d2fd9f65d98a61c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89dde614fc250b8d21db1400adedecd0"><td class="memItemLeft" align="right" valign="top"><a id="a89dde614fc250b8d21db1400adedecd0"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (bool pretty=false) -&gt; std::string</td></tr>
-<tr class="separator:a89dde614fc250b8d21db1400adedecd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c12069f24a3e42cd3ca60562ba761a"><td class="memItemLeft" align="right" valign="top"><a id="a28c12069f24a3e42cd3ca60562ba761a"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (bool pretty=false) const -&gt; std::string</td></tr>
-<tr class="separator:a28c12069f24a3e42cd3ca60562ba761a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142d4e057282f373bed7078c57ddc4b0"><td class="memItemLeft" align="right" valign="top"><a id="a142d4e057282f373bed7078c57ddc4b0"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> () -&gt; void</td></tr>
 <tr class="separator:a142d4e057282f373bed7078c57ddc4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,9 +245,6 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const Sou
 <tr class="memitem:a2453c8ad27e5dcd4f626e2a3f27443ee"><td class="memItemLeft" align="right" valign="top"><a id="a2453c8ad27e5dcd4f626e2a3f27443ee"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const Source &amp;key, const std::string &amp;value) -&gt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;</td></tr>
 <tr class="separator:a2453c8ad27e5dcd4f626e2a3f27443ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f6010c77a71d7a1931e4a167bdf9efb"><td class="memItemLeft" align="right" valign="top"><a id="a2f6010c77a71d7a1931e4a167bdf9efb"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const Source &amp;key, std::string &amp;&amp;value) -&gt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;</td></tr>
-<tr class="separator:a2f6010c77a71d7a1931e4a167bdf9efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f872304c6eb79d2ab9a3766ae0ddac8"><td class="memItemLeft" align="right" valign="top"><a id="a0f872304c6eb79d2ab9a3766ae0ddac8"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>assign</b> (const Source &amp;key, const std::vector&lt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt;&gt; &amp;value) -&gt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;</td></tr>
 <tr class="separator:a0f872304c6eb79d2ab9a3766ae0ddac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,6 +290,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (const 
 <tr class="memitem:a47d609976400dad4fe7be4249d7df218"><td class="memItemLeft" align="right" valign="top"><a id="a47d609976400dad4fe7be4249d7df218"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (<a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;&amp;value) -&gt; void</td></tr>
 <tr class="separator:a47d609976400dad4fe7be4249d7df218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955fc4699055f1b66e209f670b6f2d5a"><td class="memItemLeft" align="right" valign="top"><a id="a955fc4699055f1b66e209f670b6f2d5a"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (typename <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_array.html">sourcemeta::jsontoolkit::Array</a>&lt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt;, Source &gt;::iterator first, typename <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_array.html">sourcemeta::jsontoolkit::Array</a>&lt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt;, Source &gt;::iterator last) -&gt; typename <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_array.html">sourcemeta::jsontoolkit::Array</a>&lt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt;, Source &gt;::iterator</td></tr>
+<tr class="separator:a955fc4699055f1b66e209f670b6f2d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4c64560ae9ed0516b4ead3d5147f827"><td class="memItemLeft" align="right" valign="top"><a id="ac4c64560ae9ed0516b4ead3d5147f827"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (std::size_t index) &amp;-&gt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;</td></tr>
 <tr class="separator:ac4c64560ae9ed0516b4ead3d5147f827"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,15 +368,24 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>to_real</b> () -&gt; 
 <tr class="memitem:a4de291fb56a3729ccbf4a0f5156c169c"><td class="memItemLeft" align="right" valign="top"><a id="a4de291fb56a3729ccbf4a0f5156c169c"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>to_real</b> () const -&gt; double</td></tr>
 <tr class="separator:a4de291fb56a3729ccbf4a0f5156c169c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1686740f5c6f03480989c230b7c2e4ee"><td class="memItemLeft" align="right" valign="top"><a id="a1686740f5c6f03480989c230b7c2e4ee"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>pretty</b> () noexcept -&gt; <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;</td></tr>
+<tr class="separator:a1686740f5c6f03480989c230b7c2e4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf854bb9bc874f44431ff20f110373e"><td class="memItemLeft" align="right" valign="top"><a id="a3cf854bb9bc874f44431ff20f110373e"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>pretty</b> () const noexcept -&gt; const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;</td></tr>
+<tr class="separator:a3cf854bb9bc874f44431ff20f110373e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721bd650bf98ecd619d617f3a1cd8121"><td class="memItemLeft" align="right" valign="top"><a id="a721bd650bf98ecd619d617f3a1cd8121"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;other) const -&gt; bool</td></tr>
+<tr class="separator:a721bd650bf98ecd619d617f3a1cd8121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:afa676f962c2fb3bb1f20d03389a873f4"><td class="memItemLeft" align="right" valign="top"><a id="afa676f962c2fb3bb1f20d03389a873f4"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;stream, const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;document) -&gt; std::ostream &amp;</td></tr>
-<tr class="separator:afa676f962c2fb3bb1f20d03389a873f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aef378d73b5b919dd8cbf4c925e304c8f"><td class="memItemLeft" align="right" valign="top"><a id="aef378d73b5b919dd8cbf4c925e304c8f"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t level) -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:aef378d73b5b919dd8cbf4c925e304c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962030bbb4849a33508a1e8b7a439877"><td class="memItemLeft" align="right" valign="top"><a id="a962030bbb4849a33508a1e8b7a439877"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t level) const -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:a962030bbb4849a33508a1e8b7a439877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_container.html">sourcemeta::jsontoolkit::Container&lt; Source &gt;</a></td></tr>
 <tr class="memitem:a4c4c241565d659993d008eae34b5aa96 inherit pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td class="memItemLeft" align="right" valign="top"><a id="a4c4c241565d659993d008eae34b5aa96"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> () const -&gt; const Source &amp;</td></tr>
@@ -425,6 +435,15 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a cla
 <tr class="memitem:a148b224c987f4d068c3563c41c2c5dff inherit pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td class="memItemLeft" align="right" valign="top"><a id="a148b224c987f4d068c3563c41c2c5dff"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> () -&gt; void</td></tr>
 <tr class="separator:a148b224c987f4d068c3563c41c2c5dff inherit pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a09841b982fb37af9c83a19ae8b503c38"><td class="memItemLeft" align="right" valign="top"><a id="a09841b982fb37af9c83a19ae8b503c38"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;stream, <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;document) -&gt; std::ostream &amp;</td></tr>
+<tr class="separator:a09841b982fb37af9c83a19ae8b503c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa676f962c2fb3bb1f20d03389a873f4"><td class="memItemLeft" align="right" valign="top"><a id="afa676f962c2fb3bb1f20d03389a873f4"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;stream, const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON</a>&lt; Source &gt; &amp;document) -&gt; std::ostream &amp;</td></tr>
+<tr class="separator:afa676f962c2fb3bb1f20d03389a873f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/jsonbinpack/jsonbinpack/src/jsontoolkit/include/jsontoolkit/<a class="el" href="json_8h_source.html">json.h</a></li>

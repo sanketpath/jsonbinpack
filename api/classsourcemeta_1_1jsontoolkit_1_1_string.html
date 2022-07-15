@@ -176,6 +176,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const -&
 <tr class="memitem:a9610621deedba85a7f3de3ac430ea824"><td class="memItemLeft" align="right" valign="top"><a id="a9610621deedba85a7f3de3ac430ea824"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_string.html">String</a>&lt; Source &gt; &amp;value) const -&gt; bool</td></tr>
 <tr class="separator:a9610621deedba85a7f3de3ac430ea824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2007c88859b6ec2fea3156fa50c9ed04"><td class="memItemLeft" align="right" valign="top"><a id="a2007c88859b6ec2fea3156fa50c9ed04"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_string.html">String</a>&lt; Source &gt; &amp;other) const -&gt; bool</td></tr>
+<tr class="separator:a2007c88859b6ec2fea3156fa50c9ed04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -197,12 +200,12 @@ static const char&#160;</td><td class="memItemRight" valign="bottom"><b>token_es
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aebefe9a12c33401c022b5b65dc283ec3"><td class="memItemLeft" align="right" valign="top"><a id="aebefe9a12c33401c022b5b65dc283ec3"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> () -&gt; std::string</td></tr>
-<tr class="separator:aebefe9a12c33401c022b5b65dc283ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37a5e9d87ef6ab6df9756ce49a33a5e"><td class="memItemLeft" align="right" valign="top"><a id="ac37a5e9d87ef6ab6df9756ce49a33a5e"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> () const -&gt; std::string</td></tr>
-<tr class="separator:ac37a5e9d87ef6ab6df9756ce49a33a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde5a92c1d96866d79e74eb101fd3281"><td class="memItemLeft" align="right" valign="top"><a id="adde5a92c1d96866d79e74eb101fd3281"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t) -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:adde5a92c1d96866d79e74eb101fd3281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada02cd29de7d226663a8a3cebe49e889"><td class="memItemLeft" align="right" valign="top"><a id="ada02cd29de7d226663a8a3cebe49e889"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const std::size_t) const -&gt; std::ostream &amp;override</td></tr>
+<tr class="separator:ada02cd29de7d226663a8a3cebe49e889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classsourcemeta_1_1jsontoolkit_1_1_container.html">sourcemeta::jsontoolkit::Container&lt; Source &gt;</a></td></tr>
 <tr class="memitem:a4c4c241565d659993d008eae34b5aa96 inherit pro_methods_classsourcemeta_1_1jsontoolkit_1_1_container"><td class="memItemLeft" align="right" valign="top"><a id="a4c4c241565d659993d008eae34b5aa96"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> () const -&gt; const Source &amp;</td></tr>
@@ -255,9 +258,9 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> () -&gt; vo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:addd200fddc84fad67e7f761ab6c9991d"><td class="memItemLeft" align="right" valign="top"><a id="addd200fddc84fad67e7f761ab6c9991d"></a>
-static auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (const std::string &amp;input) -&gt; std::string</td></tr>
-<tr class="separator:addd200fddc84fad67e7f761ab6c9991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab565285b466d187aedc3e4551ab02311"><td class="memItemLeft" align="right" valign="top"><a id="ab565285b466d187aedc3e4551ab02311"></a>
+static auto&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (std::ostream &amp;stream, const Source &amp;input) -&gt; std::ostream &amp;</td></tr>
+<tr class="separator:ab565285b466d187aedc3e4551ab02311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/jsonbinpack/jsonbinpack/src/jsontoolkit/include/jsontoolkit/<a class="el" href="json__string_8h_source.html">json_string.h</a></li>
