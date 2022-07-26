@@ -925,19 +925,19 @@ $(function() {
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    this-&gt;must_be_fully_parsed();</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <span class="keywordflow">switch</span> (this-&gt;data.index()) {</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::boolean</a>):</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;      stream &lt;&lt; (std::get&lt;bool&gt;(this-&gt;data) ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::null</a>):</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;      stream &lt;&lt; <span class="stringliteral">&quot;null&quot;</span>;</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::integer</a>):</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;      stream &lt;&lt; std::to_string(std::get&lt;std::int64_t&gt;(this-&gt;data));</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::real</a>):</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      <span class="comment">// Because std::to_string tries too hard to imitate</span></div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;      <span class="comment">// sprintf and leaves trailing zeroes.</span></div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;      stream &lt;&lt; std::noshowpoint &lt;&lt; std::get&lt;double&gt;(this-&gt;data)</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;             &lt;&lt; std::showpoint;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;      sourcemeta::jsontoolkit::Boolean::stringify(stream,</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                                                  std::get&lt;bool&gt;(this-&gt;data));</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::null</a>):</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;      sourcemeta::jsontoolkit::Null::stringify(stream);</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::integer</a>):</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;      sourcemeta::jsontoolkit::Number::stringify(</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;          stream, std::get&lt;std::int64_t&gt;(this-&gt;data));</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::real</a>):</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;      sourcemeta::jsontoolkit::Number::stringify(stream,</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;                                                 std::get&lt;double&gt;(this-&gt;data));</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    <span class="keywordflow">case</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_j_s_o_n.html">JSON&lt;Source&gt;::types::string</a>):</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;      std::get&lt;<a class="code" href="classsourcemeta_1_1jsontoolkit_1_1_string.html">sourcemeta::jsontoolkit::String&lt;Source&gt;</a>&gt;(this-&gt;data)</div>
